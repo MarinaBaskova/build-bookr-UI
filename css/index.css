@@ -156,7 +156,8 @@ h4 {
 }
 p,
 a,
-li {
+li,
+label {
   line-height: 1.5;
   font-size: 1.6rem;
   padding-bottom: 10px;
@@ -172,10 +173,30 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .genericContainer,
+  .header,
+  .footer {
+    width: 95%;
+  }
+}
+@media (max-width: 768px) {
+  .genericContainer,
+  .header,
+  .footer {
+    width: 95%;
+  }
+}
+body {
+  background-color: #D9C9AE;
+}
 header {
   display: flex;
   height: 7em;
   align-items: center;
+  background-image: url(../img/bookspine.jpg);
+  background-repeat: repeat-x;
+  background-position: center;
 }
 .header {
   justify-content: center;
@@ -185,19 +206,47 @@ header {
 .cta {
   display: flex;
   flex-wrap: nowrap;
+  margin-top: 1em;
   justify-content: space-around;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .cta {
+    flex-wrap: wrap;
+  }
 }
 .sixtySix {
   width: 66%;
 }
 .sixtySix img {
   height: 50px;
-  width: 450px;
+  width: 100%;
   object-fit: cover;
+}
+@media (max-width: 500px) {
+  .sixtySix {
+    width: 100%;
+  }
 }
 .thirtyThree {
   width: 33%;
+}
+form label {
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+form .lazyWrap {
+  display: flex;
+  justify-content: center;
+  margin-right: 3.5em;
+}
+form .lazyWrap button {
+  margin-top: 1em;
+  display: inline-block;
+}
+form .lazyWrap button:nth-child(1) {
+  margin-right: 1em;
 }
 .features {
   display: flex;
@@ -205,29 +254,63 @@ header {
   justify-content: space-between;
   margin-bottom: 1em;
 }
-.fullWidthBox {
+.features img {
   width: 100%;
+  height: 50px;
+  object-fit: cover;
 }
-.fullWidthBox img {
-  height: 450px;
-  width: 450px;
+@media (max-width: 500px) {
+  .features {
+    flex-direction: column;
+  }
+}
+.fullWidthBox {
+  margin-top: 1em;
+  width: 100%;
 }
 .featureOne {
   width: 33%;
 }
+@media (max-width: 500px) {
+  .featureOne {
+    width: 100%;
+  }
+}
 .featureTwo {
   width: 33%;
 }
+@media (max-width: 500px) {
+  .featureTwo {
+    width: 100%;
+  }
+}
 .featureThree {
-  width: 33%;
+  width: 30%;
+}
+@media (max-width: 500px) {
+  .featureThree {
+    width: 100%;
+  }
+}
+.featureTrio {
+  margin-top: 2em;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
 }
 footer {
   display: flex;
   height: 7em;
   align-items: center;
+  background-image: url(../img/bookspine.jpg);
+  background-repeat: repeat-x;
+  background-position: center;
 }
 .footer {
   justify-content: center;
   width: 1100px;
   margin: 0 auto;
+}
+.footer img {
+  height: 50px;
+  object-fit: stretch;
 }

@@ -3,27 +3,46 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 1em;
+    img {
+	width: 100%;
+	height: 50px;
+	object-fit: cover;
+    }
+    @media @phone {
+	flex-direction: column;
+    }
 }
 
 .fullWidthBox {
+    margin-top: 1em;
     width: 100%;
-    img {
-	height: 450px;
-	width: 450px;
-    }
+ 
 }
 
 .featureOne {
     width: 33%;
-    
+    @media @phone {
+	width: 100%;
+    }
+      
 }
 
 .featureTwo {
     width: 33%;
-    
+    @media @phone {
+	width: 100%;
+    }
 }
 
 .featureThree {
-    width: 33%;
-   
+    width: 30%;
+    @media @phone {
+	width: 100%;
+    }
+}
+
+.featureTrio {
+    margin-top: 2em;
+    margin-right: .5em;
+    margin-left: .5em;
 }
