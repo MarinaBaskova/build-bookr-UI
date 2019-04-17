@@ -159,7 +159,7 @@ a,
 li,
 label {
   line-height: 1.5;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   padding-bottom: 10px;
 }
 img {
@@ -226,6 +226,49 @@ header {
 .nav button:hover {
   background-color: #CD871B;
 }
+.dropdown {
+  z-index: 2;
+  position: absolute;
+  left: 25px;
+  cursor: pointer;
+}
+.dropdown .dropdown-button {
+  padding: 15px;
+  border: 3px solid #CD871B;
+  background-color: forestgreen;
+  font-size: 20px;
+  font-weight: bold;
+}
+.dropdown .dropdown-button:hover {
+  background-color: #CD871B;
+}
+.dropdown .dropdown-content {
+  width: 100%;
+  position: absolute;
+  background-color: forestgreen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  border: 2.5px solid #CD871B;
+}
+.dropdown .dropdown-link {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 18px;
+  background-color: forestgreen;
+}
+.dropdown .dropdown-link a {
+  text-decoration: none;
+}
+.dropdown .dropdown-link:hover {
+  color: forestgreen;
+  background-color: #CD871B;
+}
+.dropdown .dropdown-hidden {
+  display: none;
+}
 .cta {
   display: flex;
   flex-wrap: nowrap;
@@ -246,6 +289,7 @@ header {
   display: flex;
   flexwrap: wrap;
   justify-content: space-around;
+  align-items: center;
   padding: 1em;
 }
 .sixtySix h2 {
@@ -258,6 +302,10 @@ header {
   object-fit: cover;
   margin-bottom: 1em;
   border-radius: 7px;
+}
+.sixtySix ul li {
+  font-size: 2em;
+  list-style-type: circle;
 }
 @media (max-width: 500px) {
   .sixtySix {
@@ -400,7 +448,7 @@ form .lazyWrap button:nth-child(1) {
   margin-bottom: 1em;
 }
 .featureTrio p {
-  height: 202px;
+  height: 250px;
 }
 .featureTrio h2 {
   text-align: center;
@@ -429,9 +477,15 @@ footer {
   }
 }
 .footer {
-  justify-content: center;
   width: 1100px;
   margin: 0 auto;
+  display: flex;
+}
+.footer .signin {
+  padding: 0px 25px;
+}
+.footer .signin h2 {
+  padding-bottom: 0px;
 }
 .footer img {
   height: 50px;

@@ -10,13 +10,24 @@
 
   </head>
   <body>
+    <script defer="defer" src="js/dropdown.js"></script>
     <header>
       <section class="header">
 	<ul class="nav">
        <li><button><a href="index.html">Bookr</a></button></li>
        <li><button><a href="about.html">About</a></button></li>
        <li><button><a href="contact.html">Contact</a></button></li>
-       </ul>
+	</ul>
+	<div class="dropdown">
+	  <button class="dropdown-button">
+	    Bookr
+	  </button>
+	  <div class="dropdown-content dropdown-hidden">
+	    <button class="dropdown-link"><a href="index.html">Home</a></button>
+	    <button class="dropdown-link"><a href="about.html">About</a></button>
+	    <button class="dropdown-link"><a href="contact.html">Contact</a></button>
+	  </div>
+	 </div>
     </section>
     </header>
     <div class="genericContainer">
@@ -70,7 +81,7 @@
     </div>
     <footer>
       <section class="footer">
-	<h2>footer</h2>
+	<button class="signin"><h2>Bookr 2019</h2></button>
       </section>
     </footer>
     
