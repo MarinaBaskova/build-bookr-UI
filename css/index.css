@@ -402,6 +402,9 @@ form .lazyWrap button:nth-child(1) {
 .featureTrio p {
   height: 202px;
 }
+.featureTrio h2 {
+  text-align: center;
+}
 @media (max-width: 768px) {
   .featureTrio {
     margin-left: 0em;
