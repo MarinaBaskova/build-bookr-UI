@@ -1,14 +1,35 @@
 footer {
     display:flex;
-    height: 7em;
+    height: 90px;
     align-items: center;
-   ;
-   
+    background-image: url(../img/bookshelf1.jpg);
+    //background-repeat: repeat-x;
+    //background-position: center;
+    border-top: 5px solid @color3;
+    @media @phone {
+    background-position: center;
+    }
+    @media @tablet {
+    background-position: 54% 65%;
+    }
 }
 
 .footer {
 
-    justify-content: center;
+    
     width: 1100px;
     margin: 0 auto;
+    display:flex;
+    
+    .signin {
+    padding: 0px 25px;
+    h2 {
+    padding-bottom: 0px;
+    }
+    }
+
+    img {
+    height: 50px;
+    object-fit: stretch;
+    }
 }

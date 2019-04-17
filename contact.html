@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bookr
+    </title>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet"> 
+    <link href="css/index.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  </head>
+  <body>
+   <script defer="defer" src="js/dropdown.js"></script>
+    <header>
+      <section class="header">
+	<!---
+	<ul class="nav">
+       <li><button><a href="index.html">Bookr</a></button></li>
+       <li><button><a href="about.html">About</a></button></li>
+       <li><button><a href="contact.html">Contact</a></button></li>
+	</ul>
+	-->
+	<div class="dropdown">
+	  <button class="dropdown-button">
+	    Bookr
+	  </button>
+	  <div class="dropdown-content dropdown-hidden">
+	    <button class="dropdown-link"><a href="index.html">Home</a></button>
+	    <button class="dropdown-link"><a href="about.html">About</a></button>
+	    <button class="dropdown-link"><a href="contact.html">Contact</a></button>
+	  </div>
+	 </div>
+    </section>
+    </header>
+    <div class="genericContainer">
+      <br>
+    <section class="features">
+         <section class="fullWidthBox">
+	<h2>Send a message</h2>
+	<form>
+	    <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="user_name">
+  </div>
+  <div>
+    <label for="mail">E-mail:</label>
+    <input type="email" id="mail" name="user_mail">
+  </div>
+  <div>
+    <label for="msg">Message:</label>
+    <textarea id="msg" name="user_message"></textarea>
+  </div>
+  <button>Submit</button>
+  </form>
+	<img class="stuff" src="img/books.jpg">
+	    </section>
+    </section>
+    </div>
+    <footer>
+      <section class="footer">
+	<button class="signin"><h2>Bookr 2019</h2></button>
+      </section>
+    </footer>
+    
+  </body>
+</html>

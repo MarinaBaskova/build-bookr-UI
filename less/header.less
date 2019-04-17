@@ -1,8 +1,15 @@
 header {
     display:flex;
-    height: 7em;
+    flexwrap: wrap;
+    height: 90px;
     align-items: center;
-   
+    border-bottom: 5px solid @color3;
+    background-image: url(../img/bookshelf1.jpg);
+    //background-repeat: repeat-x;
+    //background-position: center;
+    @media @tablet {
+    background-position: 54% 65%;
+    }
 }
 
 .header {
@@ -11,3 +18,78 @@ header {
     width: 1100px;
     margin: 0 auto;
 }
+
+.nav {
+    display:flex;
+    button {
+	border-radius: 5px;
+	margin: 0 10px;
+	background-color: @buttonColor;
+	padding: 7px;
+	text-decoration: none;
+	border: none;
+	a {
+	text-decoration: none;
+	color: white;
+	
+	}
+
+    }
+    	button:hover {
+	    background-color: @color3;
+	}
+}
+
+
+.dropdown {
+   margin-top: 60px;
+   margin-left: 54px;
+   @media @phone {
+       margin-left: 0px;
+   }
+   @media @tablet {
+       margin-left: 32px;
+   }
+  .dropdown-button {
+    padding: 15px;
+    border: 3px solid @color3;
+    background-color: @buttonColor;
+    font-size: 20px;
+    font-weight: bold;
+    &:hover {
+	background-color: @color3;
+    }
+  }
+  .dropdown-content {
+      width: 7%;
+      @media @tablet {
+	  width: 15%;
+      }
+    position: absolute;
+    background-color: @buttonColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    margin-top: 10px;
+    border: 2.5px solid @color3;
+  }
+  .dropdown-link {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 18px;
+    a {
+	text-decoration: none;
+    }
+    background-color:  @buttonColor;
+    &:hover {
+      color: @buttonColor;
+      background-color: @color3;
+    }
+  }
+  .dropdown-hidden {
+    display: none;
+  }
+}
+
+

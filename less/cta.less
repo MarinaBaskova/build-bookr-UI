@@ -1,20 +1,122 @@
 .cta {
     display:flex;
     flex-wrap: nowrap;
-    
+    margin-top: 1em;
     justify-content: space-around;
     align-items: center;
+    @media @phone {
+	flex-wrap: wrap;
+    }
 }
 
 .sixtySix {
     width: 66%;
+   // border: 2px solid @accent;
+    border-radius: 5px;
+    .aaa {
+    display:flex;
+    flexwrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+    }
+    @media @tablet {
+	h2{
+	    margin-left:239px;
+	}
+    }
+    h2 {
+	margin-top: .25em;
+	text-align: center;
+    }
     img {
-	height: 50px;
-	width: 450px;
+	height: 200px;
+	width: 33%;
 	object-fit: cover;
+	margin-bottom: 1em;
+	border-radius: 7px;
+    }
+    @media @tablet {
+	ul {
+	    margin-left: 40px;
+	}
+    }
+    ul li {
+	font-size: 2em;
+	list-style-type: circle;
+    }
+    @media @phone {
+	width: 100%;
+	h2{
+	    margin-left:100px;
+	}
     }
 }
 
 .thirtyThree {
     width: 33%;
+   // border: 2px solid forestgreen;
+    border-radius: 5px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    @media @phone {
+	width: 44%;
+	margin-top: 2em;
+    }
+    .lazyWrap{
+        	@media @tablet {
+	    margin-left: 10px;
+	}
+    }
 }
+
+form {
+    label {
+	display: inline-block;
+	width: 90px;
+	text-align: right;
+    }
+    .lazyWrap{
+	display:flex;
+	justify-content:center;
+	margin-right: 3.5em;
+
+    button{
+	margin-top: 1em;
+	display: inline-block;
+
+    }
+    button:nth-child(1){
+	margin-right: 1em;
+    }
+    }
+}
+
+.signin {
+  padding: 15px 36px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 0 10px;
+  background-color: @buttonColor;
+  text-decoration: none;
+  border: none;
+}
+    .signin:hover {
+	    background-color: @color3;
+	}
+
+.signup {
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 10px 10px;
+  background-color: @buttonColor;
+  text-decoration: none;
+  border: none;
+}
+    .signup:hover {
+	    background-color: @color3;
+	}
