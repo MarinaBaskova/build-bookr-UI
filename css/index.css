@@ -382,6 +382,10 @@ form .lazyWrap button:nth-child(1) {
   text-decoration: none;
   border: none;
 }
+.signin a {
+  color: black;
+  text-decoration: none;
+}
 .signin:hover {
   background-color: #CD871B;
 }
@@ -393,6 +397,10 @@ form .lazyWrap button:nth-child(1) {
   background-color: forestgreen;
   text-decoration: none;
   border: none;
+}
+.signup a {
+  color: black;
+  text-decoration: none;
 }
 .signup:hover {
   background-color: #CD871B;
