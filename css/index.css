@@ -227,10 +227,18 @@ header {
   background-color: #CD871B;
 }
 .dropdown {
-  z-index: 2;
-  position: absolute;
-  left: 25px;
-  cursor: pointer;
+  margin-top: 60px;
+  margin-left: 54px;
+}
+@media (max-width: 500px) {
+  .dropdown {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 768px) {
+  .dropdown {
+    margin-left: 32px;
+  }
 }
 .dropdown .dropdown-button {
   padding: 15px;
@@ -243,7 +251,7 @@ header {
   background-color: #CD871B;
 }
 .dropdown .dropdown-content {
-  width: 100%;
+  width: 7%;
   position: absolute;
   background-color: forestgreen;
   display: flex;
@@ -251,6 +259,11 @@ header {
   align-items: center;
   margin-top: 10px;
   border: 2.5px solid #CD871B;
+}
+@media (max-width: 768px) {
+  .dropdown .dropdown-content {
+    width: 15%;
+  }
 }
 .dropdown .dropdown-link {
   width: 100%;
@@ -292,6 +305,11 @@ header {
   align-items: center;
   padding: 1em;
 }
+@media (max-width: 768px) {
+  .sixtySix h2 {
+    margin-left: 239px;
+  }
+}
 .sixtySix h2 {
   margin-top: 0.25em;
   text-align: center;
@@ -303,6 +321,11 @@ header {
   margin-bottom: 1em;
   border-radius: 7px;
 }
+@media (max-width: 768px) {
+  .sixtySix ul {
+    margin-left: 40px;
+  }
+}
 .sixtySix ul li {
   font-size: 2em;
   list-style-type: circle;
@@ -310,6 +333,9 @@ header {
 @media (max-width: 500px) {
   .sixtySix {
     width: 100%;
+  }
+  .sixtySix h2 {
+    margin-left: 100px;
   }
 }
 .thirtyThree {
@@ -323,6 +349,11 @@ header {
   .thirtyThree {
     width: 44%;
     margin-top: 2em;
+  }
+}
+@media (max-width: 768px) {
+  .thirtyThree .lazyWrap {
+    margin-left: 10px;
   }
 }
 form label {
@@ -382,6 +413,11 @@ form .lazyWrap button:nth-child(1) {
 @media (max-width: 500px) {
   .features {
     flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .features {
+    justify-content: center;
   }
 }
 .fullWidthBox {
@@ -457,6 +493,15 @@ form .lazyWrap button:nth-child(1) {
   .featureTrio {
     margin-left: 0em;
     margin-right: 0em;
+    height: 540px;
+    width: 65%;
+  }
+}
+@media (max-width: 500px) {
+  .featureTrio {
+    margin-left: 0em;
+    margin-right: 0em;
+    height: 530px;
   }
 }
 footer {

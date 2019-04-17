@@ -20,6 +20,11 @@
     align-items: center;
     padding: 1em;
     }
+    @media @tablet {
+	h2{
+	    margin-left:239px;
+	}
+    }
     h2 {
 	margin-top: .25em;
 	text-align: center;
@@ -31,12 +36,20 @@
 	margin-bottom: 1em;
 	border-radius: 7px;
     }
+    @media @tablet {
+	ul {
+	    margin-left: 40px;
+	}
+    }
     ul li {
 	font-size: 2em;
 	list-style-type: circle;
     }
     @media @phone {
 	width: 100%;
+	h2{
+	    margin-left:100px;
+	}
     }
 }
 
@@ -51,6 +64,11 @@
 	width: 44%;
 	margin-top: 2em;
     }
+    .lazyWrap{
+        	@media @tablet {
+	    margin-left: 10px;
+	}
+    }
 }
 
 form {
@@ -63,6 +81,7 @@ form {
 	display:flex;
 	justify-content:center;
 	margin-right: 3.5em;
+
     button{
 	margin-top: 1em;
 	display: inline-block;
