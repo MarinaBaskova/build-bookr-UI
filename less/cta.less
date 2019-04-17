@@ -41,6 +41,7 @@
     border-radius: 5px;
     display:flex;
     justify-content: space-around;
+    align-items: center;
     @media @phone {
 	width: 44%;
 	margin-top: 2em;
@@ -60,6 +61,7 @@ form {
     button{
 	margin-top: 1em;
 	display: inline-block;
+
     }
     button:nth-child(1){
 	margin-right: 1em;
@@ -71,10 +73,26 @@ form {
   padding: 15px 36px;
   text-align: center;
   text-decoration: none;
+  border-radius: 5px;
+  margin: 0 10px;
+  background-color: @buttonColor;
+  text-decoration: none;
+  border: none;
 }
+    .signin:hover {
+	    background-color: @color3;
+	}
 
 .signup {
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
+  border-radius: 5px;
+  margin: 10px 10px;
+  background-color: @buttonColor;
+  text-decoration: none;
+  border: none;
 }
+    .signup:hover {
+	    background-color: @color3;
+	}

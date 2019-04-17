@@ -208,6 +208,24 @@ header {
   width: 1100px;
   margin: 0 auto;
 }
+.nav {
+  display: flex;
+}
+.nav button {
+  border-radius: 5px;
+  margin: 0 10px;
+  background-color: forestgreen;
+  padding: 7px;
+  text-decoration: none;
+  border: none;
+}
+.nav button a {
+  text-decoration: none;
+  color: white;
+}
+.nav button:hover {
+  background-color: #CD871B;
+}
 .cta {
   display: flex;
   flex-wrap: nowrap;
@@ -251,6 +269,7 @@ header {
   border-radius: 5px;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 @media (max-width: 500px) {
   .thirtyThree {
@@ -278,12 +297,26 @@ form .lazyWrap button:nth-child(1) {
 .signin {
   padding: 15px 36px;
   text-align: center;
+  border-radius: 5px;
+  margin: 0 10px;
+  background-color: forestgreen;
   text-decoration: none;
+  border: none;
+}
+.signin:hover {
+  background-color: #CD871B;
 }
 .signup {
   padding: 15px 32px;
   text-align: center;
+  border-radius: 5px;
+  margin: 10px 10px;
+  background-color: forestgreen;
   text-decoration: none;
+  border: none;
+}
+.signup:hover {
+  background-color: #CD871B;
 }
 .features {
   display: flex;
@@ -306,6 +339,19 @@ form .lazyWrap button:nth-child(1) {
 .fullWidthBox {
   margin-top: 1.5em;
   width: 100%;
+}
+.fullWidthBox button {
+  margin-left: 92px;
+  margin-bottom: 15px;
+  padding: 15px 36px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: forestgreen;
+  text-decoration: none;
+  border: none;
+}
+.fullWidthBox button:hover {
+  background-color: #CD871B;
 }
 @media (max-width: 500px) {
   .fullWidthBox {
