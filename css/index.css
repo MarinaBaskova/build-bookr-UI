@@ -415,7 +415,6 @@ form .lazyWrap button:nth-child(1) {
   width: 100%;
   height: 50px;
   object-fit: cover;
-  margin-bottom: 1em;
   border-radius: 2px;
 }
 @media (max-width: 500px) {
@@ -491,6 +490,17 @@ form .lazyWrap button:nth-child(1) {
   border-radius: 7px;
   margin-bottom: 1em;
 }
+@media (max-width: 500px) {
+  .featureTrio p {
+    margin-top: 10px;
+    margin-bottom: 33px;
+  }
+}
+@media (max-width: 768px) {
+  .featureTrio p {
+    margin-top: 10px;
+  }
+}
 .featureTrio p {
   height: 250px;
 }
@@ -507,9 +517,9 @@ form .lazyWrap button:nth-child(1) {
 }
 @media (max-width: 500px) {
   .featureTrio {
-    margin-left: 0em;
-    margin-right: 0em;
-    height: 530px;
+    margin: 0 auto;
+    margin-top: 25px;
+    height: 600px;
   }
 }
 footer {
